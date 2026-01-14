@@ -1,4 +1,4 @@
-# CMS Projekt (HTML5/CSS + PHP/MySQL)
+# PHP PROJEKT
 Autor: Filip Pribanić
 
 ## Pokretanje u XAMPP-u
@@ -8,10 +8,3 @@ Autor: Filip Pribanić
 4. Import SQL: `cms_project/sql/schema.sql` (kreira bazu `cms_project`)
 5. Otvori projekt:
    - http://localhost/cms_project/index.php?menu=home
-
-## Admin test login
-- username: admin
-- password: Admin123
-
-## Video za "O nama"
-Stavi MP4 u: `assets/video/about.mp4` (bez YouTube embed-a).
