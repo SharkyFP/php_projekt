@@ -1,0 +1,67 @@
+/* Autor: Filip Pribanić */
+/* Osnovni reset */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Arial,sans-serif;background:#f2f2f2;color:#222;}
+a{color:inherit;}
+header .banner{background:#333;color:#fff;text-align:center;padding:24px 12px;}
+header .banner h1{font-size:28px;margin-bottom:6px;}
+header .banner p{opacity:.9;}
+
+nav{background:#555;}
+nav ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;}
+nav li a{display:block;padding:14px 18px;color:#fff;text-decoration:none;}
+nav li a:hover{background:#222;}
+
+main{max-width:1100px;margin:0 auto;background:#fff;min-height:70vh;padding:24px;}
+
+footer{background:#333;color:#fff;text-align:center;padding:16px;}
+footer a{color:#fff;text-decoration:underline;}
+
+/* Home image */
+figure{margin-top:16px;}
+figure img{max-width:100%;height:auto;display:block;border-radius:6px;}
+figcaption{margin-top:8px;font-size:14px;color:#555;}
+
+/* Contact form */
+.kontakt-forma{max-width:520px;margin:0 auto;display:flex;flex-direction:column;gap:10px;}
+.kontakt-forma label{font-weight:600;}
+.kontakt-forma input,.kontakt-forma select,.kontakt-forma textarea{
+  padding:10px;font-size:16px;border:1px solid #ccc;border-radius:6px;
+}
+.kontakt-forma button{
+  padding:12px;background:#333;color:#fff;border:none;border-radius:6px;cursor:pointer;
+}
+.kontakt-forma button:hover{background:#111;}
+
+/* Gallery grid */
+.gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:15px;margin-top:16px;}
+.gallery-item{background:#fff;padding:10px;border-radius:8px;text-align:center;box-shadow:0 0 8px rgba(0,0,0,.12);}
+.gallery-item img{width:100%;height:120px;object-fit:cover;border-radius:6px;}
+.gallery-item figcaption{margin-top:8px;font-size:14px;}
+
+/* News */
+.news-list article{border-bottom:1px solid #eee;padding:16px 0;}
+.news-thumb{display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;}
+.news-thumb img{width:200px;max-width:100%;border-radius:6px;}
+.badge{display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;background:#eee;margin-left:8px;}
+.badge.approved{background:#d4edda;}
+.badge.pending{background:#fff3cd;}
+.badge.archived{background:#e2e3e5;}
+
+/* Admin */
+.admin-nav{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0;}
+.admin-nav a{background:#555;color:#fff;padding:8px 10px;border-radius:6px;text-decoration:none;}
+.admin-nav a:hover{background:#222;}
+.table{width:100%;border-collapse:collapse;margin-top:10px;}
+.table th,.table td{border:1px solid #ddd;padding:8px;text-align:left;vertical-align:top;}
+.table th{background:#f7f7f7;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+@media (max-width:768px){
+  nav ul{flex-direction:column;align-items:stretch;}
+  main{margin:0;border-radius:0;}
+  .gallery{grid-template-columns:repeat(2,1fr);}
+  .form-row{grid-template-columns:1fr;}
+}
+@media (max-width:992px){
+  .gallery{grid-template-columns:repeat(3,1fr);}
+}
